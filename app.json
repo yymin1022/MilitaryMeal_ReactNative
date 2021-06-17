@@ -1,0 +1,12 @@
+{
+  "name": "military-meal",
+  "displayName": "military-meal",
+  "expo": {
+    "name": "military-meal",
+    "slug": "military-meal",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
