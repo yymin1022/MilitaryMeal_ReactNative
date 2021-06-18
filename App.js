@@ -26,7 +26,27 @@ export default function App() {
         </View>
       </View>
       <View style={styles.containerBottom}>
-        <Text>Other Ranks</Text>
+        <View style={styles.containerBottomItem}>
+          <Text>Rank 4</Text>
+        </View>
+        <View style={styles.containerBottomItem}>
+          <Text>Rank 5</Text>
+        </View>
+        <View style={styles.containerBottomItem}>
+          <Text>Rank 6</Text>
+        </View>
+        <View style={styles.containerBottomItem}>
+          <Text>Rank 7</Text>
+        </View>
+        <View style={styles.containerBottomItem}>
+          <Text>Rank 8</Text>
+        </View>
+        <View style={styles.containerBottomItem}>
+          <Text>Rank 9</Text>
+        </View>
+        <View style={styles.containerBottomItem}>
+          <Text>Rank 10</Text>
+        </View>
       </View>
       <StatusBar style="auto" />
     </View>
@@ -42,7 +62,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   containerAppBar: {
-    flex: 1,
+    flex: 2,
 
     alignItems: 'center',
     backgroundColor: '#ffffff',
@@ -51,6 +71,8 @@ const styles = StyleSheet.create({
   containerTop: {
     flex: 4,
     flexDirection: 'row',
+    height: '100%',
+    width: '100%',
 
     alignItems: 'center',
     backgroundColor: '#ffffff',
@@ -71,7 +93,7 @@ const styles = StyleSheet.create({
     width: '90%',
     
     alignItems: 'center',
-    backgroundColor: 'gray',
+    backgroundColor: 'lightgray',
     borderRadius: 10,
     justifyContent: 'center'
   },
@@ -81,16 +103,29 @@ const styles = StyleSheet.create({
     width: '90%',
     
     alignItems: 'center',
-    backgroundColor: 'gray',
+    backgroundColor: 'lightgray',
     borderRadius: 10,
     justifyContent: 'center',
     marginTop: 10
   },
   containerBottom: {
     flex: 10,
+    height: '100%',
+    width: '100%',
 
     alignItems: 'center',
     backgroundColor: '#ffffff',
     justifyContent: 'center',
+  },
+  containerBottomItem: {
+    flex: 1,
+    height: '100%',
+    width: '95%',
+
+    alignItems: 'center',
+    backgroundColor: 'lightgray',
+    borderRadius: 10,
+    justifyContent: 'center',
+    margin: 8
   },
 });
