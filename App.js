@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'lightgray',
     borderRadius: 10,
     justifyContent: 'center',
-    marginTop: 10
+    marginTop: 15
   },
   containerBottom: {
     flex: 10,
