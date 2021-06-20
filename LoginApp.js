@@ -7,8 +7,8 @@ export default function App() {
         <View style={styles.container}>
             <View style={styles.containerTop}>
                 <Text>LOGO_국방부</Text>
-                <Text>김병장님,</Text>
-                <Text>식사시간입니다.</Text>
+                <Text style={styles.textTitle}>김병장님,</Text>
+                <Text style={styles.textTitle}>식사시간입니다.</Text>
             </View>
             <View style={styles.containerBottom}>
                 <View style={styles.containerBottomInputID}>
@@ -76,5 +76,8 @@ const styles = StyleSheet.create({
 
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
+    },
+    textTitle: {
+        fontSize: 25,
     },
 });
