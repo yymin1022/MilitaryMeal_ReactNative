@@ -7,6 +7,7 @@ export default function RankItem(props) {
 
   return (
     <View style={styles.container}>
+        
       <Text>{menuRank}</Text>
       <Text>{menuTitle}</Text>
     </View>
