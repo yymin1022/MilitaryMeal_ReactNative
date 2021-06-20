@@ -49,76 +49,94 @@ const styles = StyleSheet.create({
         flex: 1,
 
         alignItems: 'center',
-        backgroundColor: '#ffffff',
         justifyContent: 'center',
+
+        backgroundColor: '#ffffff',
     },
     containerAppBar: {
         flex: 2,
 
         alignItems: 'center',
-        backgroundColor: '#ffffff',
         justifyContent: 'center',
+
+        backgroundColor: '#ffffff',
     },
     containerTop: {
         flex: 4,
         flexDirection: 'row',
+
         height: '100%',
         width: '100%',
 
+        margin: 5,
+
         alignItems: 'center',
-        backgroundColor: '#ffffff',
         justifyContent: 'center',
-        margin: 5
+
+        backgroundColor: '#ffffff',
     },
     containerTopItem: {
-        height: "100%",
         flex: 1,
+
+        height: "100%",
         
         alignItems: 'center',
-        backgroundColor: '#ffffff',
         justifyContent: 'center',
+
+        backgroundColor: '#ffffff',
     },
     containerTopItemCenter: {
         flex: 1,
+
         height: '100%',
         width: '90%',
         
         alignItems: 'center',
+        justifyContent: 'flex-end',
+
+        paddingBottom: 20,
+
         backgroundColor: 'lightgray',
         borderRadius: 10,
-        justifyContent: 'flex-end',
-        paddingBottom: 20,
     },
     containerTopItemSide: {
         flex: 1,
+
         height: '100%',
         width: '90%',
         
         alignItems: 'center',
-        backgroundColor: 'lightgray',
-        borderRadius: 10,
         justifyContent: 'flex-end',
+
         marginTop: 15,
         paddingBottom: 20,
+
+        backgroundColor: 'lightgray',
+        borderRadius: 10,
     },
     containerBottom: {
         flex: 10,
+        
         height: '100%',
         width: '100%',
 
         alignItems: 'center',
-        backgroundColor: '#ffffff',
         justifyContent: 'center',
+
+        backgroundColor: '#ffffff',
     },
     containerBottomItem: {
         flex: 1,
+
         height: '100%',
         width: '95%',
 
         alignItems: 'center',
+        justifyContent: 'center',
+
+        margin: 8,
+
         backgroundColor: 'lightgray',
         borderRadius: 10,
-        justifyContent: 'center',
-        margin: 8
     },
 });

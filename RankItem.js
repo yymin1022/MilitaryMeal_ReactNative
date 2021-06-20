@@ -26,23 +26,28 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: 'row',
+
         height: '100%',
         width: '95%',
 
+        margin: 10,
+
         alignItems: 'center',
+        justifyContent: 'space-between',
+
         backgroundColor: 'lightgray',
         borderRadius: 10,
-        justifyContent: 'space-between',
-        margin: 10,
     },
     containerLeft: {
         flex: 1,
         flexDirection: 'row',
+
         height: '100%',
         width: '100%',
 
-        alignItems: 'center',
         margin: 10,
+
+        alignItems: 'center',
     },
     containerLeftRank: {
         height: '100%',
@@ -54,17 +59,20 @@ const styles = StyleSheet.create({
     containerLeftTitle: {
         alignItems: 'center',
         justifyContent: 'center',
+
         margin: 10,
     },
     containerRight: {
         flex: 1,
         flexDirection: 'row',
+
         height: '100%',
         width: '100%',
 
+        margin: 10,
+
         alignItems: 'center',
         justifyContent: 'flex-end',
-        margin: 10,
     },
     textRank: {
         fontSize: 20,

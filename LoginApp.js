@@ -51,6 +51,7 @@ const styles = StyleSheet.create({
 
         alignItems: 'center',
         justifyContent: 'flex-start',
+        marginTop: 10,
     },
     containerBottomInputID: {
         flexDirection: 'row',
