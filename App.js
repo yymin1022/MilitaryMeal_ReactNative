@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import RankItem from './RankItem';
+
 export default function App() {
   return (
     <View style={styles.container}>
@@ -26,27 +28,14 @@ export default function App() {
         </View>
       </View>
       <View style={styles.containerBottom}>
-        <View style={styles.containerBottomItem}>
-          <Text>Rank 4</Text>
-        </View>
-        <View style={styles.containerBottomItem}>
-          <Text>Rank 5</Text>
-        </View>
-        <View style={styles.containerBottomItem}>
-          <Text>Rank 6</Text>
-        </View>
-        <View style={styles.containerBottomItem}>
-          <Text>Rank 7</Text>
-        </View>
-        <View style={styles.containerBottomItem}>
-          <Text>Rank 8</Text>
-        </View>
-        <View style={styles.containerBottomItem}>
-          <Text>Rank 9</Text>
-        </View>
-        <View style={styles.containerBottomItem}>
-          <Text>Rank 10</Text>
-        </View>
+        <RankItem menu="김치찌개" rank="4"/>
+        <RankItem menu="김치찌개" rank="5"/>
+        <RankItem menu="김치찌개" rank="6"/>
+        <RankItem menu="김치찌개" rank="7"/>
+        <RankItem menu="김치찌개" rank="8"/>
+        <RankItem menu="김치찌개" rank="9"/>
+        <RankItem menu="김치찌개" rank="10"/>
+        
       </View>
       <StatusBar style="auto" />
     </View>
