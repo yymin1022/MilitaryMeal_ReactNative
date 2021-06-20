@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     containerBottomInputID: {
         flexDirection: 'row',
 
-        height: 40,
+        height: 50,
         width: '80%',
 
         margin: 10,
@@ -71,13 +71,13 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
 
         borderColor: 'lightgray',
-        borderRadius: 20,
+        borderRadius: 25,
         borderWidth: 2,
     },
     containerBottomInputPW: {
         flexDirection: 'row',
 
-        height: 40,
+        height: 50,
         width: '80%',
 
         margin: 10,
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
 
         borderColor: 'lightgray',
-        borderRadius: 20,
+        borderRadius: 25,
         borderWidth: 2,
     },
     containerBottomMenu: {
