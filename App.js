@@ -13,17 +13,20 @@ export default function App() {
         <View style={styles.containerTop}>
             <View style={styles.containerTopItem}>
                 <View style={styles.containerTopItemSide}>
-                    <Text>Rank 2</Text>
+                    <Text>된장찌개</Text>
+                    <Text>BTN_LIKE</Text>
                 </View>
             </View>
             <View style={styles.containerTopItem}>
                 <View style={styles.containerTopItemCenter}>
-                    <Text>Rank 1</Text>
+                    <Text>된장찌개</Text>
+                    <Text>BTN_LIKE</Text>
                 </View>
             </View>
             <View style={styles.containerTopItem}>
                 <View style={styles.containerTopItemSide}>
-                    <Text>Rank 3</Text>
+                    <Text>고추장찌개</Text>
+                    <Text>BTN_LIKE</Text>
                 </View>
             </View>
         </View>
@@ -83,7 +86,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: 'lightgray',
         borderRadius: 10,
-        justifyContent: 'center'
+        justifyContent: 'flex-end',
+        paddingBottom: 20,
     },
     containerTopItemSide: {
         flex: 1,
@@ -93,8 +97,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: 'lightgray',
         borderRadius: 10,
-        justifyContent: 'center',
-        marginTop: 15
+        justifyContent: 'flex-end',
+        marginTop: 15,
+        paddingBottom: 20,
     },
     containerBottom: {
         flex: 10,
