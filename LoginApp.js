@@ -18,10 +18,12 @@ export default function App() {
                     <Text>PW INPUT</Text>
                 </View>
                 <View style={styles.containerBottomMenu}>
-                    <Text>ID_FIND / PW_FIND / REGISTER</Text>
+                    <Text style={styles.textMenu}>아이디 찾기</Text>
+                    <Text style={styles.textMenu}>비밀번호 찾기</Text>
+                    <Text style={styles.textMenu}>회원가입</Text>
                 </View>
                 <View style={styles.containerBottomLogin}>
-                    <Text>LOGIN</Text>
+                    <Text style={styles.textLogin}>LOGIN</Text>
                 </View>
             </View>
             <StatusBar style="auto" />
@@ -49,34 +51,64 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
 
+        width: '100%',
+
+        marginTop: 10,
+
         alignItems: 'center',
         justifyContent: 'flex-start',
-        marginTop: 10,
     },
     containerBottomInputID: {
         flexDirection: 'row',
 
-        alignItems: 'flex-start',
+        height: 40,
+        width: '80%',
+
+        margin: 10,
+
+        alignItems: 'center',
         justifyContent: 'flex-start',
+
+        borderColor: 'lightgray',
+        borderRadius: 10,
+        borderWidth: 2,
     },
     containerBottomInputPW: {
         flexDirection: 'row',
 
-        alignItems: 'flex-start',
+        height: 40,
+        width: '80%',
+
+        margin: 10,
+
+        alignItems: 'center',
         justifyContent: 'flex-start',
+
+        borderColor: 'lightgray',
+        borderRadius: 10,
+        borderWidth: 2,
     },
     containerBottomMenu: {
         flexDirection: 'row',
 
-        alignItems: 'flex-start',
-        justifyContent: 'flex-start',
+        width: '75%',
+
         marginBottom: 20,
+
+        alignItems: 'flex-start',
+        justifyContent: 'space-between',
     },
     containerBottomLogin: {
         flexDirection: 'row',
 
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
+    },
+    textLogin: {
+        fontSize: 30,
+    },
+    textMenu: {
+        fontSize: 15,
     },
     textTitle: {
         fontSize: 25,
