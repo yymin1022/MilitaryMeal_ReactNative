@@ -5,7 +5,10 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
     return (
         <View style={styles.container}>
-            <View style={styles.containerMain}>
+            <View style={styles.containerTop}>
+                <Text>View</Text>
+            </View>
+            <View style={styles.containerBottom}>
                 <Text>View</Text>
             </View>
             <StatusBar style="auto" />
@@ -16,20 +19,24 @@ export default function App() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        flexDirection: 'column',
 
         alignItems: 'center',
         backgroundColor: '#ffffff',
         justifyContent: 'center',
     },
-    containerMain: {
+    containerTop: {
         flex: 1,
-        flexDirection: 'row',
-        height: '100%',
-        width: '100%',
+        flexDirection: 'column',
 
-        alignItems: 'center',
-        backgroundColor: '#ffffff',
-        justifyContent: 'center',
-        margin: 5
+        alignContent: 'center',
+        justifyContent: 'flex-end',
+    },
+    containerBottom: {
+        flex: 1,
+        flexDirection: 'column',
+
+        alignContent: 'center',
+        justifyContent: 'flex-start',
     },
 });
