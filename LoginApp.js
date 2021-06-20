@@ -6,10 +6,23 @@ export default function App() {
     return (
         <View style={styles.container}>
             <View style={styles.containerTop}>
-                <Text>View</Text>
+                <Text>LOGO_국방부</Text>
+                <Text>김병장님,</Text>
+                <Text>식사시간입니다.</Text>
             </View>
             <View style={styles.containerBottom}>
-                <Text>View</Text>
+                <View style={styles.containerBottomInputID}>
+                    <Text>ID INPUT</Text>
+                </View>
+                <View style={styles.containerBottomInputPW}>
+                    <Text>PW INPUT</Text>
+                </View>
+                <View style={styles.containerBottomMenu}>
+                    <Text>ID_FIND / PW_FIND / REGISTER</Text>
+                </View>
+                <View style={styles.containerBottomLogin}>
+                    <Text>LOGIN</Text>
+                </View>
             </View>
             <StatusBar style="auto" />
         </View>
@@ -29,14 +42,39 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
 
-        alignContent: 'center',
+        alignItems: 'center',
         justifyContent: 'flex-end',
     },
     containerBottom: {
         flex: 1,
         flexDirection: 'column',
 
-        alignContent: 'center',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+    },
+    containerBottomInputID: {
+        flexDirection: 'row',
+
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+    },
+    containerBottomInputPW: {
+        flexDirection: 'row',
+
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+    },
+    containerBottomMenu: {
+        flexDirection: 'row',
+
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+        marginBottom: 20,
+    },
+    containerBottomLogin: {
+        flexDirection: 'row',
+
+        alignItems: 'flex-start',
         justifyContent: 'flex-start',
     },
 });
