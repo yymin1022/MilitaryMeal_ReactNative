@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
         borderWidth: 2,
     },
     textLogin: {
-        fontSize: 30,
+        fontSize: 20,
     },
     textMenu: {
         fontSize: 15,
