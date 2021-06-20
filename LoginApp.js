@@ -65,12 +65,13 @@ const styles = StyleSheet.create({
         width: '80%',
 
         margin: 10,
+        padding: 10,
 
         alignItems: 'center',
         justifyContent: 'flex-start',
 
         borderColor: 'lightgray',
-        borderRadius: 10,
+        borderRadius: 20,
         borderWidth: 2,
     },
     containerBottomInputPW: {
@@ -80,12 +81,13 @@ const styles = StyleSheet.create({
         width: '80%',
 
         margin: 10,
+        padding: 10,
 
         alignItems: 'center',
         justifyContent: 'flex-start',
 
         borderColor: 'lightgray',
-        borderRadius: 10,
+        borderRadius: 20,
         borderWidth: 2,
     },
     containerBottomMenu: {
@@ -101,8 +103,17 @@ const styles = StyleSheet.create({
     containerBottomLogin: {
         flexDirection: 'row',
 
-        alignItems: 'flex-start',
-        justifyContent: 'flex-start',
+        height: 50,
+        width: '80%',
+
+        margin: 10,
+
+        alignItems: 'center',
+        justifyContent: 'center',
+
+        borderColor: 'lightgray',
+        borderRadius: 25,
+        borderWidth: 2,
     },
     textLogin: {
         fontSize: 30,
