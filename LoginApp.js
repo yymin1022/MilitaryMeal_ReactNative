@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
 
 export default function App() {
     return (
@@ -13,9 +13,11 @@ export default function App() {
             <View style={styles.containerBottom}>
                 <View style={styles.containerBottomInputID}>
                     <Text>ID INPUT</Text>
+                    <TextInput style={styles.inputID}></TextInput>
                 </View>
                 <View style={styles.containerBottomInputPW}>
                     <Text>PW INPUT</Text>
+                    <TextInput style={styles.inputPW}></TextInput>
                 </View>
                 <View style={styles.containerBottomMenu}>
                     <Text style={styles.textMenu}>아이디 찾기</Text>
@@ -65,7 +67,8 @@ const styles = StyleSheet.create({
         width: '80%',
 
         margin: 10,
-        padding: 10,
+        paddingStart: 10,
+        paddingEnd: 10,
 
         alignItems: 'center',
         justifyContent: 'flex-start',
@@ -81,7 +84,8 @@ const styles = StyleSheet.create({
         width: '80%',
 
         margin: 10,
-        padding: 10,
+        paddingStart: 10,
+        paddingEnd: 10,
 
         alignItems: 'center',
         justifyContent: 'flex-start',
@@ -114,6 +118,14 @@ const styles = StyleSheet.create({
         borderColor: 'lightgray',
         borderRadius: 25,
         borderWidth: 2,
+    },
+    inputID: {
+        height: '100%',
+        width: '100%',
+    },
+    inputPW: {
+        height: '100%',
+        width: '100%',
     },
     textLogin: {
         fontSize: 20,
