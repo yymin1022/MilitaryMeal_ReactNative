@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 export default function App() {
     return (
@@ -20,12 +20,20 @@ export default function App() {
                     <TextInput style={styles.inputPW}></TextInput>
                 </View>
                 <View style={styles.containerBottomMenu}>
-                    <Text style={styles.textMenu}>아이디 찾기</Text>
-                    <Text style={styles.textMenu}>비밀번호 찾기</Text>
-                    <Text style={styles.textMenu}>회원가입</Text>
+                    <TouchableOpacity activeOpacity={0.5} style={styles.btnMenu}>
+                        <Text style={styles.textMenu}>아이디 찾기</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity activeOpacity={0.5} style={styles.btnMenu}>
+                        <Text style={styles.textMenu}>비밀번호 찾기</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity activeOpacity={0.5} style={styles.btnMenu}>
+                        <Text style={styles.textMenu}>회원가입</Text>
+                    </TouchableOpacity>
                 </View>
                 <View style={styles.containerBottomLogin}>
-                    <Text style={styles.textLogin}>LOGIN</Text>
+                    <TouchableOpacity activeOpacity={0.5} style={styles.btnLogin}>
+                        <Text style={styles.textLogin}>LOGIN</Text>
+                    </TouchableOpacity>
                 </View>
             </View>
             <StatusBar style="auto" />
@@ -118,6 +126,17 @@ const styles = StyleSheet.create({
         borderColor: 'lightgray',
         borderRadius: 25,
         borderWidth: 2,
+    },
+    btnLogin:{
+        height: '100%',
+        width: '100%',
+
+        alignItems: 'center',
+        justifyContent:'center',
+    },
+    btnMenu:{
+        alignItems: 'center',
+        justifyContent:'center',
     },
     inputID: {
         height: '100%',
